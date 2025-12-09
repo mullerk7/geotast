@@ -1,0 +1,5 @@
+{
+  "name": "GeoStats Guess",
+  "description": "Um jogo de curiosidades geográficas onde você adivinha o país com base no IDH, População e Taxa de Homicídios usando dados reais e dicas de IA.",
+  "requestFramePermissions": []
+}

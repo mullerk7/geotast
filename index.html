@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoStats Guess - Adivinhe o País</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: '#0f0505', // Very dark red/black
+                red: '#dc2626',
+                accent: '#ffffff',
+              }
+            },
+            animation: {
+              'bounce-short': 'bounce 0.5s ease-in-out 2',
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050101;
+        color: #ffffff;
+        font-family: 'Inter', sans-serif;
+        background-image: radial-gradient(circle at 50% 0%, #450a0a 0%, #050101 70%);
+        min-height: 100vh;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1f0505; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #991b1b; 
+        border-radius: 0px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #dc2626; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.32.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
